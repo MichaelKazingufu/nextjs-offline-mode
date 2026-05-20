@@ -7,7 +7,7 @@ const withPWA = nextPwa({
   skipWaiting: true,
 
   // IMPORTANT FIX
-  disable: process.env.NODE_ENV === "development",
+  disable: process.env.NODE_ENV !== "production",
 });
 
 const nextConfig: NextConfig = {
